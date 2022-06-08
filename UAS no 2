@@ -1,20 +1,17 @@
 #include <iostream>
-#include <conio.h>
 #include <string.h>
 using namespace std;
 int main()
 {
     char kota1,kota2,kota3,kota4,kota5;
     int jumlah,panjang, hasil1,hasil2,hasil3,hasil4,hasil5,hasil6,hasil7;
-    
-    cout<<"		_ZESYCA DWI ANJARSARI_"<<endl;
-    cout<<"		_21091397010_"<<endl;
-     
+    cout<<"                         _Cinderella Ih Hsin Chiang_"<<endl;
+    cout<<"                                 _21091397022_"<<endl;
     cout<<endl;
-    
-    cout<<"* Jumlah kota yang berada di kerajaan Britan : "<< endl;
+    // input jumlah kota
+    cout<<"* Jumlah kota yang berada di Kerajaan Britan : "<< endl;
     cin>>jumlah;
-    
+    // input nama kota
     // deklarasi vertex
     // menampilkan masing-masing vertex
     cout<<"Kota Pertama : ";
@@ -27,9 +24,7 @@ int main()
     cin>>kota4;
 	cout<<"Kota kelima  : ";
 	cin>>kota5;
-	
 	cout<<endl;
-	
 	// deklarasi edge
 	// menampilkan setiap edge yang terjadi
 	cout<<"* Sisi-sisinya adalah : "<<endl<<endl;
@@ -40,7 +35,6 @@ int main()
     cout<<kota3<<kota5<<",";
     cout<<kota3<<kota4<<",";
     cout<<kota4<<kota5<<endl<<endl;
-	
 	// deklarasi weight
 	// menampilkan panjang jalan yang menghubungkan vertex
 	cout<<"* Panjang jalan antar kota : "<<endl;
@@ -51,10 +45,10 @@ int main()
 	cout<<"panjang "<<kota3<<" ke "<<kota5<< ": "; cin>> hasil5;
 	cout<<"panjang "<<kota3<<" ke "<<kota4<< ": "; cin>> hasil6;
 	cout<<"panjang "<<kota4<<" ke "<<kota5<< ": "; cin>> hasil7;
-	
 	cout<<endl;
-	
-	cout<<"* seluruh jalan yang ada dalam kerajaan britan dan panjang jalannya : "<< endl;
+	//deklarasi adjacent
+	//menampilkan jalan yang menghubungkan kedua simpul (x,y,z)
+	cout<<"* seluruh jalan yang ada dalam Kerajaan Britan dan panjang jalannya : "<< endl;
 	cout<<"("<<kota1<<","<<kota2<<","<<hasil1<<") ";
 	cout<<"("<<kota1<<","<<kota4<<","<<hasil2<<") ";
 	cout<<"("<<kota1<<","<<kota5<<","<<hasil3<<") ";
@@ -62,33 +56,27 @@ int main()
 	cout<<"("<<kota3<<","<<kota5<<","<<hasil5<<") ";
 	cout<<"("<<kota3<<","<<kota4<<","<<hasil6<<") ";
 	cout<<"("<<kota4<<","<<kota5<<","<<hasil7<<") ";
-	
 	cout<<endl<<endl;
-	
+	//hasil
+	//menampilkan tempat pedagang berada
 	cout<<"* kota tempat pedagang sekarang berada : "<<endl<<endl;
 	cout<<kota1;
-	
 	cout<<endl<<endl;
-	
+	//menampilkan kota yang diserang naga
 	cout<<"* kota yang diserang naga : "<<endl<<endl;
 	cout<<kota3; 
-	
 	cout<<endl<<endl;
-	
+	//menampilkan kota yang terdapat kastil
 	cout<<"* kota yang memiliki kastil : "<<endl<<endl;
 	cout<<kota5;
-	
 	cout<<endl<<endl;
-		
+	//menampilkan vertex tercepat untuk selamat
 	cout<<"* jalur yang paling cepat ditempuh : "<<endl<<endl;
 	cout<<kota1<<"-"<<kota4<<"-"<<kota5<<endl;
-	
 	cout<<endl<<endl;
-	
-	cout<< "* dengan jarak : "<<endl<<endl;
+	//total edge yang harus ditempuh
+	cout<< "* dengan jarak yang ditempuh : "<<endl<<endl;
 	cout<<hasil2+hasil7<<endl<<endl;
-	
-	
-	getch();
+	getc;
 	return 0;
 }
